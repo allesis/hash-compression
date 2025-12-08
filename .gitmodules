@@ -1,0 +1,9 @@
+[submodule "rav1e"]
+	path = rav1e
+	url = https://github.com/allesis/rav1e
+[submodule "rav1d"]
+	path = rav1d
+	url = https://github.com/allesis/rav1d
+[submodule "SOFTX"]
+	path = SOFTX
+	url = https://github.com/allesis/SOFTX-D-23-00169
