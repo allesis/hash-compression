@@ -6,4 +6,4 @@
 	url = https://github.com/allesis/rav1d
 [submodule "vqmtk"]
 	path = vqmtk
-	url = https://github.com/allesis/vqmtk
+	url = git@public.github.com:allesis/vqmtk
