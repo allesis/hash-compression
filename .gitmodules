@@ -4,6 +4,6 @@
 [submodule "rav1d"]
 	path = rav1d
 	url = https://github.com/allesis/rav1d
-[submodule "SOFTX"]
-	path = SOFTX
-	url = https://github.com/allesis/SOFTX-D-23-00169
+[submodule "vqmtk"]
+	path = vqmtk
+	url = https://github.com/allesis/vqmtk
