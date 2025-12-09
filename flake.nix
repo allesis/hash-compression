@@ -18,14 +18,25 @@
           };
         });
   in {
-    devShells = forEachSupportedSystem ({pkgs}: {
+    devShells = forEachSupportedSystem ({pkgs}: let
+      lua_with_lux = pkgs.lua5_1.withPackages (ps: [
+        ps.lux-lua
+      ]);
+    in {
       default = pkgs.mkShell {
-        buildInputs = with pkgs; [
-          lua
+        nativeBuildInputs = [
+          lua_with_lux
+          pkgs.lux-cli
         ];
+
         packages = with pkgs; [
           lux-cli
-          lua-language-server
+	  lua_with_lux
+          # lua-language-server
+          emmylua-check
+          emmylua-ls
+          emmylua-doc-cli
+          emmy-lua-code-style
           stylua
         ];
       };
