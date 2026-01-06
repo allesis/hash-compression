@@ -1,5 +1,11 @@
-run: VIDEO
+all VIDEO: (run VIDEO) (convert VIDEO) (test VIDEO)
+run VIDEO:
 	just rav1e/run {{VIDEO}}
-test-convert: VIDEO
-	just rav1d/test-convert {{VIDEO}}
+convert VIDEO:
+	just rav1d/convert {{VIDEO}}
+test VIDEO:
+	just vqmtk/test {{VIDEO}}
+dev-test VIDEO:
+	just vqmtk/dev-test {{VIDEO}}
+
 
