@@ -38,6 +38,10 @@
           emmylua-doc-cli
           emmy-lua-code-style
           stylua
+	  uv
+	  python314
+          python313Packages.jedi-language-server
+	  just-lsp
         ];
       };
     });
