@@ -1,0 +1,6 @@
+JOB names get_names.sub
+JOB video process_video.sub
+JOB results process_results.sub
+
+PARENT names CHILD video
+PARENT video CHILD results

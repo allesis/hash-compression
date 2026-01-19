@@ -1,0 +1,14 @@
+universe = vanilla
+executable = process_video.sh
+arguments = $(file)
+getenv = true
+
+request_GPUs = 0
+request_cpus = 16
+request_memory = 32G
+
+Output     = ./log/$(file)_output.log
+Error      = ./log/$(file)_error.log
+Log        = ./log/$(file)_condor.log
+
+queue file matching *.y4m

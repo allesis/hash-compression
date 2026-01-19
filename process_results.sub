@@ -1,0 +1,14 @@
+universe = vanilla
+executable = process_results.sh
+getenv = true
+
+request_GPUs = 0
+request_cpus = 16
+request_memory = 32G
+
+Output     = ./log/results_output.log
+Error      = ./log/results_error.log
+Log        = ./log/results_condor.log
+
+initialdir = $HOME/gits/hash-compression
+queue
