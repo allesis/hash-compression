@@ -1,15 +1,12 @@
-executable   = myexe
-arguments    = SomeArgument
+executable   = lua
+arguments    = get_video_names.lua
 
-output       = outputfile
-error        = errorfile
-log          = myexe.log
+output       = $HOME/.condor/video-names.log
+error        = $HOME/.condor/video-names.error
+log          = $HOME/.condor/video-names.condor
 
-request_cpus   = 1
-request_memory = 1024M
-request_disk   = 10240K
-
-should_transfer_files = yes
-when_to_transfer_output = on_exit
+request_cpus   = 4
+request_memory = 4G 
+request_disk   = 4G
 
 queue
