@@ -1,0 +1,12 @@
+executable   = just
+arguments    = install-release $HOME/.local/bin
+
+output       = $HOME/.condor/build-$(pwd | sed "s/.*\//").log
+error        = $HOME/.condor/build-$(pwd | sed "s/.*\//").error
+log          = $HOME/.condor/build-$(pwd | sed "s/.*\//").condor
+
+request_cpus   = 8
+request_memory = 16G
+request_disk   = 32G
+
+queue
