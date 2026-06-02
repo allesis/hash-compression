@@ -1,0 +1,12 @@
+executable   = lua
+arguments    = get_video_names.lua
+
+output       = $HOME/.condor/video-names.log
+error        = $HOME/.condor/video-names.error
+log          = $HOME/.condor/video-names.condor
+
+request_cpus   = 4
+request_memory = 4G 
+request_disk   = 4G
+
+queue
